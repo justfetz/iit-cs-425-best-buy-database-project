@@ -20,6 +20,8 @@ class customer(models.Model):
 	city = models.CharField(max_length=120, default='my location default', blank=True, null=True)
 	state = models.CharField(max_length=120, null=True)
 	zipcode = models.CharField(max_length=12, null = True)
+	phoneNumber = models.CharField(max_length=20)
+	email = models.CharField(max_length=120)
 
 	def __unicode__(self):
 		return self.name 
